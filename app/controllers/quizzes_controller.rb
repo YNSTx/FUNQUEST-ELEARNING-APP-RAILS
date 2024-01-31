@@ -23,24 +23,8 @@ class QuizzesController < ApplicationController
   def submit_quiz
     set_course
     set_quiz
-    
-    quiz_params = params.require(:quiz).permit(
-      questions_attributes: [
-        :id,
-        :user_choice,
-        :question_text,
-        :choice_one,
-        :choice_two,
-        :choice_three,
-        :choice_four,
-        :correct_answer
-      ]
-    )
 
-    @quiz.update(quiz_params)
-
-    if @quiz.valid?
-      @quiz.save
+    if @quiz.update(quiz_params)
       @score = calculate_score(@quiz)
       respond_to do |format|
         format.turbo_stream { render turbo_stream: turbo_stream.replace(@quiz) }
@@ -65,8 +49,17 @@ class QuizzesController < ApplicationController
   end
 
   def quiz_params
-    params.require(:quiz).permit(questions_attributes: [:id, :user_choice])
+    params.require(:questions).permit(
 
+        :id,
+        :question_text,
+        :choice_one,
+        :choice_two,
+        :choice_three,
+        :choice_four,
+        :user_choice,
+        :correct_answer
+    )
   end
 
   def calculate_score(quiz)
