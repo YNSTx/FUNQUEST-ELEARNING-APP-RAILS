@@ -9,10 +9,5 @@ class CoursesController < ApplicationController
     @course = Course.find(params[:id])
     @quiz = Quiz.new
   end
-
-  def destroy
-    @course = course.find(params[:id])
-    @course.destroy
-    redirect_to courses_path
-  end
+  
 end

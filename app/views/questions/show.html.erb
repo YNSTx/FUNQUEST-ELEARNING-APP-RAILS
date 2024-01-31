@@ -1,11 +1,12 @@
-<h1>Question Details</h1>
+ <div class="container">
+ <div class="row">
+ <div class="col">
+      <h2><strong><%= @course.title %></strong></h2>
+    <p><%= @course.description %></p>
+    <p><%= @course.length %> weeks</p>
 
-<p><strong>Question:</strong> <%= @question.question_text %></p>
-<p><strong>Choices:</strong></p>
-<ul>
-  <li><%= @question.choice_one %></li>
-  <li><%= @question.choice_two %></li>
-  <li><%= @question.choice_three %></li>
-  <li><%= @question.choice_four %></li>
-</ul>
-<p><strong>Correct Answer:</strong> <%= @question.correct_answer %></p>
+    <%= link_to 'Back to courses', courses_path, class: 'btn btn-secondary mt-3' %>
+
+</div>
+</div>
+</div>

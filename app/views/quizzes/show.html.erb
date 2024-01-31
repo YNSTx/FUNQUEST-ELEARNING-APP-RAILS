@@ -2,23 +2,24 @@
 
 <p>Enrollment Date: <%= @quiz.enrollment_date %></p>
 
-<%= form_with(model: [@course, @quiz], url: submit_quiz_course_quiz_path(@course, @quiz), method: :post) do |form| %>
-  <% @quiz.questions.each.with_index(1) do |question, index| %>
-    <h2>Question <%= index %></h2>
-    <p><strong>Question:</strong> <%= question.question_text %></p>
-    <p><strong>Choices:</strong></p>
-    <ul>
-      <li><%= question.choice_one %></li>
-      <li><%= question.choice_two %></li>
-      <li><%= question.choice_three %></li>
-      <li><%= question.choice_four %></li>
-    </ul>
-    <%= form.fields_for "quiz[questions_attributes][#{index - 1}]", question do |question_form| %>
-      <%= question_form.hidden_field :id %>
-      <%= question_form.label :user_choice, "Your Answer" %>
-      <%= question_form.select :user_choice, [['Choice One', 'choice_one'], ['Choice Two', 'choice_two'], ['Choice Three', 'choice_three'], ['Choice Four', 'choice_four']], {}, { prompt: 'Select your answer' } %>
-    <% end %>
-  <% end %>
+<div>
+  <form action="<%= answers_path(@quiz, @answer) %>" method="post">
+    <% @quiz.questions.each.with_index(1) do |question, index| %>
+      <h2>Question <%= index %></h2>
+      <p><strong>Question:</strong> <%= question.question_text %></p>
+      <p><strong>Choices:</strong></p>
 
-  <%= form.submit "Submit Quiz" %>
-<% end %>
+      <select name="answer[user_choice][]">
+        <option value="">Select an answer</option>
+        <option value="<%= question.choice_one %>"><%= question.choice_one %></option>
+        <option value="<%= question.choice_two %>"><%= question.choice_two %></option>
+        <option value="<%= question.choice_three %>"><%= question.choice_three %></option>
+        <option value="<%= question.choice_four %>"><%= question.choice_four %></option>
+      </select>
+
+      <input type="hidden" value="<%= question.id %>" name="answer[question_id]">
+
+    <% end %>
+    <button type="submit">Submit</button>
+  </form>
+</div>

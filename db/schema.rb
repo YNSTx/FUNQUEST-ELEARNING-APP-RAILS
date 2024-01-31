@@ -43,6 +43,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_31_102329) do
   end
 
   create_table "answers", force: :cascade do |t|
+    t.string "user_choice"
     t.bigint "user_id", null: false
     t.bigint "question_id", null: false
     t.datetime "created_at", null: false
