@@ -7,9 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-User.destroy_all
 Course.destroy_all
-
+User.destroy_all
+  
 # User.create!(first_name: "Younes", last_name: "ST", email: "younes@lewagon.com", password: "rails123")
 
 # Course.create!(title: "Effective Communication Mastery", description: " This course focuses on enhancing verbal and non-verbal communication skills in professional settings. Participants will learn to express ideas clearly, listen actively, and adapt communication styles to different audiences.", lenght: 10)
