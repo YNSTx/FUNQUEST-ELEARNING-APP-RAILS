@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+#imageCarousel {
+  margin-top: 20px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #636060;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+}
+
+.custom-carousel-controls {
+  background-color: #555;
+}
+
+.col-md-4 {
+  background-color: #eee;
+  padding: 10px;
+  height: 100%;
+}
+
+.btn-secondary {
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+}
+.btn:hover {
+  background-color: #ecbc0e; /* Set a darker shade on button hover */
+}
