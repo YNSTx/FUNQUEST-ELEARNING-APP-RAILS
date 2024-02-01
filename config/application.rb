@@ -13,6 +13,10 @@ module FunquestElearningAppRails
       generate.helper false
       generate.test_framework :test_unit, fixture: false
     end
+
+    config.assets.precompile += %w( components/footer.css )
+    config.assets.precompile += %w( components/home.css )
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 
