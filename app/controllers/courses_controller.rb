@@ -8,7 +8,7 @@ class CoursesController < ApplicationController
   def show
     @course = Course.find(params[:id])
     @quiz = Quiz.new
-    @course_images = Cloudinary::Api.resources(type: 'upload', prefix: "#{@course.id}-#{CGI.escape(@course.title)}")
+    @course = Course.find(params[:id])
   end
 
 end
