@@ -17,7 +17,7 @@
         <option value="<%= question.choice_four %>"><%= question.choice_four %></option>
       </select>
 
-      <input type="hidden" value="<%= question.id %>" name="answer[question_id]">
+      <input type="hidden" value="<%= question.id %>" name="answer[question_id][]">
 
     <% end %>
     <button type="submit">Submit</button>

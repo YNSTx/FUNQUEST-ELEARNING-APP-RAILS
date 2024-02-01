@@ -67,7 +67,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_31_102329) do
     t.string "choice_two"
     t.string "choice_three"
     t.string "choice_four"
-    t.boolean "correct_answer"
+    t.string "correct_answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["quiz_id"], name: "index_questions_on_quiz_id"

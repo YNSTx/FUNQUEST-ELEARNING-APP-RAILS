@@ -7,7 +7,7 @@ class CreateQuestions < ActiveRecord::Migration[7.1]
       t.string :choice_two
       t.string :choice_three
       t.string :choice_four
-      t.boolean :correct_answer
+      t.string :correct_answer
 
       t.timestamps
     end

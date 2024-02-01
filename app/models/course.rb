@@ -1,5 +1,5 @@
 class Course < ApplicationRecord
   has_many :quizzes
   has_many :questions, through: :quizzes
-  has_many_attached :photos
+  has_many :course_images
 end
