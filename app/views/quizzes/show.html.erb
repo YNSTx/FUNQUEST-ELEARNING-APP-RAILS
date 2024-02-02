@@ -1,25 +1,34 @@
-<h1>Quiz Details</h1>
+<%= stylesheet_link_tag 'components/quiz' %>
 
-<p>Enrollment Date: <%= @quiz.enrollment_date %></p>
+<div class="container">
+  <h1 class="mt-4 mb-4">Quiz questions</h1>
 
-<div>
-  <form action="<%= answers_path(@quiz, @answer) %>" method="post">
-    <% @quiz.questions.each.with_index(1) do |question, index| %>
-      <h2>Question <%= index %></h2>
-      <p><strong>Question:</strong> <%= question.question_text %></p>
-      <p><strong>Choices:</strong></p>
+  <p>Enrollment Date: <%= @quiz.enrollment_date %></p>
+  <p>Course: <%= @quiz.course.title %></p>
+  <p>Student: <%= current_user.first_name %> <%= current_user.last_name %></p>
 
-      <select name="answer[user_choice][]">
-        <option value="">Select an answer</option>
-        <option value="<%= question.choice_one %>"><%= question.choice_one %></option>
-        <option value="<%= question.choice_two %>"><%= question.choice_two %></option>
-        <option value="<%= question.choice_three %>"><%= question.choice_three %></option>
-        <option value="<%= question.choice_four %>"><%= question.choice_four %></option>
-      </select>
+  <div>
+    <form action="<%= answers_path(@quiz, @answer) %>" method="post">
+      <% @quiz.questions.each.with_index(1) do |question, index| %>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Question <%= index %></h2>
+            <p class="card-text"><strong>Question:</strong> <%= question.question_text %></p>
+            <p class="card-text"><strong>Choices:</strong></p>
 
-      <input type="hidden" value="<%= question.id %>" name="answer[question_id][]">
+            <select class="custom-select mb-2" name="answer[user_choice][]">
+              <option value="">Select an answer</option>
+              <option value="<%= question.choice_one %>"><%= question.choice_one %></option>
+              <option value="<%= question.choice_two %>"><%= question.choice_two %></option>
+              <option value="<%= question.choice_three %>"><%= question.choice_three %></option>
+              <option value="<%= question.choice_four %>"><%= question.choice_four %></option>
+            </select>
 
-    <% end %>
-    <button type="submit">Submit</button>
-  </form>
+            <input type="hidden" value="<%= question.id %>" name="answer[question_id][]">
+          </div>
+        </div>
+      <% end %>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 </div>

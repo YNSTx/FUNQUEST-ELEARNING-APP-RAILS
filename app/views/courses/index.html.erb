@@ -1,19 +1,22 @@
-<div class="container">
-<div class="row">
-<div class="col">
+<%= stylesheet_link_tag 'components/course_index' %>
 
-  <h1><strong>Courses</strong></h1>
-<% @courses.each do |course| %>
-  <div>
-    <h2><%= course.title %></h2>
-    <p><%= course.description %></p>
-    <p><%= course.length %> weeks</p>
-    <%= link_to 'Enroll now', course_path(course), class: 'btn btn-light' %>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1><strong>Courses</strong></h1>
+        <div class="ag-courses_box">
+          <% @courses.each do |course| %>
+            <div class="ag-courses_item">
+              <a href="<%= course_path(course) %>" class="ag-courses-item_link">
+                <h2 class="ag-courses-item_title"><%= course.title %></h2>
+                <p><%= course.description %></p>
+                <p class="ag-courses-item_date-box"><span class="ag-courses-item_date"><%= course.length %> weeks</span></p>
+                <button class="btn btn-light">Enroll now</button>
+                <div class="ag-courses-item_bg"></div>
+              </a>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
-<% end %>
-
-
-
-</div>
-</div>
-</div>
