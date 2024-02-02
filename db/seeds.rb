@@ -49,43 +49,61 @@ course1 = Course.create(
   title: "Critical Thinking and Problem Solving",
   description: "This course emphasizes developing critical thinking skills to analyze situations, identify problems, and implement effective solutions. It covers techniques for decision-making and problem-solving in various contexts.",
   length: 4,
-  image_description: ["A maze with a person thinking nearby", "An infographic or diagram with icons", "A visual representation of interconnected neurons", "A video demonstration", "A picture of a flower garden", "A series of written paragraphs"]
+  image_description: ["In this introductory slide, a compelling visual representation of a complex problem, such as a challenging puzzle or a tangled knot, sets the tone for the presentation. Accompanying this, there is an image of a person engaged in thoughtful brainstorming, emphasizing the idea that problem-solving involves tackling intricate challenges. This slide aims to capture the audience's attention and convey the essence of problem-solving as a skill requiring creativity and critical thinking.",
+     "Provides a structured overview of the six steps involved in effective problem-solving. To enhance understanding and engagement, an infographic or diagram is included, featuring visually appealing icons or illustrations corresponding to each step. This visual aid helps break down the process into manageable components, making it easier for the audience to follow and grasp the key elements of problem-solving.",
+      "The critical thinking aspect of problem-solving, utilizing an image of a brain with interconnected neurons. This symbolic representation underscores the interconnected nature of critical thinking, with additional icons or images representing analysis, evaluation, and decision-making. The goal is to highlight the cognitive processes involved in approaching problems critically and systematically.",
+       "Emphasizes the role of creativity in problem-solving by featuring an illustration of a lightbulb or a vibrant, imaginative scene. This visual representation aims to convey the link between creative thinking and finding unique solutions to problems. By showcasing the spark of creativity, this slide encourages the audience to embrace innovative approaches when tackling challenges.",
+        "The importance of effective communication in the problem-solving process. Graphics depicting a communication network, such as interconnected speech bubbles or a flowchart, emphasize the need for clear and coherent communication. This visual representation underscores the idea that successful problem-solving relies on the ability to convey ideas, collaborate, and share information effectively.",
+      "The concept of problem-solving into real-world contexts. Featuring images of diverse scenarios, case studies, or professionals collaborating, this slide illustrates practical applications of problem-solving skills. By showcasing real-world situations where individuals successfully implement solutions and overcome challenges, this slide encourages the audience to apply the acquired knowledge in their own practical experiences."]
 )
 
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801238/01-Problem-solving/nnufdhnrmotc67vo03nd.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/pedwfolfpeekudkpl6zo.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/rf0niajrwvtsmotmi1va.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/tnnbydepsr2izkyvrafd.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/qgncirsywdqzq9vymvxe.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/s0zgqyoyuvtelzclcyvq.png")
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801238/01-Problem-solving/nnufdhnrmotc67vo03nd.png") #1
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/tnnbydepsr2izkyvrafd.png") #2
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/s0zgqyoyuvtelzclcyvq.png") #3
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/pedwfolfpeekudkpl6zo.png") #4
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/qgncirsywdqzq9vymvxe.png") #5
+add_image(course1, 'https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/rf0niajrwvtsmotmi1va.png') #6
 
 course2 = Course.create!(
   title: "Effective Communication Skills",
   description: "A course designed to enhance verbal and written communication skills. It may cover elements like active listening, clear articulation, and adapting communication styles for different audiences.",
   length: 8,
-  image_description: ["A maze with a person thinking nearby", "An infographic or diagram with icons", "A visual representation of interconnected neurons", "A video demonstration", "A picture of a flower garden", "A series of written paragraphs"]
+  image_description: ["Begin with an engaging image that represents communication (e.g., speech bubbles, a handshake). Introduce the importance of effective communication in personal and professional contexts. Highlight how communication skills contribute to building relationships and achieving success.", "Break down the key elements of effective communication:
+    - Clarity: Use visuals representing clear messaging.
+    - Conciseness: Show an image or icon representing brevity and to-the-point communication.
+    - Active Listening: Illustrate attentive listening with an image of a person actively engaged in a conversation.
+    - Feedback: Include a visual of a feedback loop to emphasize the importance of receiving and providing feedback.",
+     "Use split visuals to showcase verbal (speech, words) and non-verbal (body language, gestures) communication. Explain how both aspects contribute to effective communication and how they should align to avoid mixed messages.",
+      "Feature images of individuals showing empathy, such as someone comforting another or actively understanding a colleague's perspective. Discuss the role of empathy in fostering positive communication and building strong relationships.",
+       "Illustrate common barriers to communication (e.g., noise, language differences) with visuals. Discuss strategies to overcome these barriers, including active listening, asking for clarification, and adapting communication style to the audience.",
+        " Provide practical tips for effective communication, such as using 'I' statements, choosing the right communication channel, and adjusting communication style based on the audience. Use icons or images to represent each tip for visual appeal."]
 )
 
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/y2kxlez04b8ytkuhkkib.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/l9rtzlrunv5yfnc2ldvr.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/sun09bs4rn12m15v9zif.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/ofkheov8nyjvkvnamdua.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/vh8etn4ly3c8onwpill7.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/rj8ba76rgzbv8y9nlbtg.png")
+add_image(course2, 'https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/rj8ba76rgzbv8y9nlbtg.png') #1
+add_image(course2, 'https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/sun09bs4rn12m15v9zif.png') #2
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/vh8etn4ly3c8onwpill7.png") #3
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/ofkheov8nyjvkvnamdua.png") #4
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/l9rtzlrunv5yfnc2ldvr.png") #5
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/y2kxlez04b8ytkuhkkib.png") #6
 
 course3 = Course.create!(
   title: "Time Management and Prioritization",
   description: "Focused on helping individuals prioritize tasks, set goals, and manage their time efficiently. This course addresses strategies for dealing with time constraints and improving overall productivity.",
   length: 3,
-  image_description: ["A maze with a person thinking nearby", "An infographic or diagram with icons", "A visual representation of interconnected neurons", "A video demonstration", "A picture of a flower garden", "A series of written paragraphs"]
+  image_description: ["introduces the presentation with the captivating title Mastering Time Management and Prioritization and a complementary subtitle, Essential Soft Skills for Enhanced Productivity. Visual elements include clocks, calendars, or images symbolizing time, providing a thematic backdrop for the entire presentation.",
+     "Why Time Management Matters is the focus of the second slide. It delves into the critical role of time management in both personal and professional success, emphasizing its impact on productivity and stress levels. A visual aid compares well-managed time to poorly managed time, creating a compelling narrative.",
+      "The Key Principles to Master in effective time management. It covers setting SMART goals, prioritizing tasks based on urgency and importance, and incorporating time-blocking and scheduling. An accompanying infographic or diagram enhances understanding of these foundational principles.",
+       "Identifying and Overcoming Time Wasters, the fourth slide addresses the need to recognize common time-wasting activities. It provides strategies to overcome procrastination and distractions. Visual aids, such as illustrations or icons representing common time-wasting activities, enhance the audience's understanding.",
+       "Effective Tools for Time Management, introduces digital tools and apps for task management, alongside techniques for efficient delegation. Visual elements like screenshots or icons of popular time management tools contribute to a practical understanding of their implementation.",
+        "Putting Knowledge into Action, emphasizes translating gained knowledge into a practical action plan. It encourages the audience to develop a personalized time management strategy, create an actionable plan for implementation, and highlights the importance of continuous improvement. Visual aids such as checklists, progress charts, or a roadmap provide a tangible and motivational conclusion to the presentation"]
 )
 
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800192/03-timemanagement/rtaxsoavastqajcj8yxl.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800188/03-timemanagement/d4u2pmbmpn54svc5msek.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800187/03-timemanagement/ifzz5hlpougaupleyaip.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/voiq5i3m1tuziphj894s.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/clr4v1t0omqineucdqgc.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/qm61jvpjvlchxeopwk8h.png")
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800187/03-timemanagement/ifzz5hlpougaupleyaip.png") #1
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/voiq5i3m1tuziphj894s.png") #2
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/clr4v1t0omqineucdqgc.png") #3
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800192/03-timemanagement/rtaxsoavastqajcj8yxl.png") #4
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/qm61jvpjvlchxeopwk8h.png") #5
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800188/03-timemanagement/d4u2pmbmpn54svc5msek.png") #6
 
 # Create Quizzes with Questions for Course 1
 quiz1 = Quiz.create!(
