@@ -1,35 +1,50 @@
-
 .footer-06 {
-  background-color: #2E3252; /* Set your desired background color */
-  color: #fff; /* Set your desired text color */
-  padding: 40px 0; /* Adjust padding as needed */
+  background-color: #2E3252;
+  /* Set your desired background color */
+  color: #fff;
+  /* Set your desired text color */
+  padding: 40px 0;
+  /* Adjust padding as needed */
 }
 
 /* Style the subscribe section */
 .footer-06 .subscribe-form {
-  max-width: 400px; /* Set a maximum width for the subscribe form */
+  max-width: 400px;
+  /* Set a maximum width for the subscribe form */
 }
 
 .footer-06 .subscribe-form input[type="text"] {
-  width: 70%; /* Adjust the input width */
-  padding: 10px; /* Adjust padding as needed */
-  border: 1px solid #fff; /* Set border color */
-  border-radius: 5px; /* Set border radius */
+  width: 70%;
+  /* Adjust the input width */
+  padding: 10px;
+  /* Adjust padding as needed */
+  border: 1px solid #fff;
+  /* Set border color */
+  border-radius: 5px;
+  /* Set border radius */
 }
 
 .footer-06 .subscribe-form button {
-  width: 30%; /* Adjust the button width */
-  padding: 10px; /* Adjust padding as needed */
-  border: 1px solid #fff; /* Set border color */
-  border-radius: 5px; /* Set border radius */
-  background-color: #007bff; /* Set button background color */
-  color: #fff; /* Set button text color */
+  width: 30%;
+  /* Adjust the button width */
+  padding: 10px;
+  /* Adjust padding as needed */
+  border: 1px solid #fff;
+  /* Set border color */
+  border-radius: 5px;
+  /* Set border radius */
+  background-color: #007bff;
+  /* Set button background color */
+  color: #fff;
+  /* Set button text color */
 }
 
 /* Style the information, application, and API sections */
 .footer-06 h2.footer-heading {
-  color: #fff; /* Set heading text color */
-  font-size: 18px; /* Set heading font size */
+  color: #fff;
+  /* Set heading text color */
+  font-size: 18px;
+  /* Set heading font size */
 }
 
 .footer-06 ul.list-unstyled {
@@ -38,25 +53,31 @@
 }
 
 .footer-06 ul.list-unstyled li a {
-  color: #ccc; /* Set link text color */
+  color: #ccc;
+  /* Set link text color */
   text-decoration: none;
-  font-size: 14px; /* Set link font size */
+  font-size: 14px;
+  /* Set link font size */
   display: block;
-  padding: 5px 0; /* Adjust padding as needed */
+  padding: 5px 0;
+  /* Adjust padding as needed */
 }
 
 .footer-06 ul.list-unstyled li a:hover {
-  color: #fff; /* Set link text color on hover */
+  color: #fff;
+  /* Set link text color on hover */
 }
 
 /* Style the copyright section */
 .footer-06 p.copyright {
-  color: #ccc; /* Set copyright text color */
-  font-size: 14px; /* Set copyright font size */
+  color: #ccc;
+  /* Set copyright text color */
+  font-size: 14px;
+  /* Set copyright font size */
 }
 
 /* Add this to your existing CSS or in a separate SCSS file */
-.logoimag{
+.logoimag {
 
   width: 150px;
   height: 100px;
