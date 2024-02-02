@@ -14,11 +14,10 @@ module FunquestElearningAppRails
       generate.test_framework :test_unit, fixture: false
     end
 
-     # Add the following line to configure precompiled assets
-     config.assets.precompile += %w( components/course_index.css )
-      config.assets.precompile += %w( components/course_show.css )
-      config.assets.precompile += %w( components/quiz.css )
-
+# Add the following line to configure precompiled assets
+    config.assets.precompile += %w( components/course_index.css )
+    config.assets.precompile += %w( components/course_show.css )
+    config.assets.precompile += %w( components/quiz.css )
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
