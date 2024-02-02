@@ -52,26 +52,30 @@ course1 = Course.create(
   image_description: ["A maze with a person thinking nearby", "An infographic or diagram with icons", "A visual representation of interconnected neurons", "A video demonstration", "A picture of a flower garden", "A series of written paragraphs"]
 )
 
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801238/01-Problem-solving/nnufdhnrmotc67vo03nd.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/pedwfolfpeekudkpl6zo.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/rf0niajrwvtsmotmi1va.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/tnnbydepsr2izkyvrafd.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/qgncirsywdqzq9vymvxe.png")
-add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/s0zgqyoyuvtelzclcyvq.png")
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801238/01-Problem-solving/nnufdhnrmotc67vo03nd.png") #1
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/tnnbydepsr2izkyvrafd.png") #2
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/s0zgqyoyuvtelzclcyvq.png") #3
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/pedwfolfpeekudkpl6zo.png") #4
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801234/01-Problem-solving/qgncirsywdqzq9vymvxe.png") #5
+add_image(course1, "https://res.cloudinary.com/djesiex6g/image/upload/v1706801235/01-Problem-solving/rf0niajrwvtsmotmi1va.png") #6
 
 course2 = Course.create!(
   title: "Effective Communication Skills",
   description: "A course designed to enhance verbal and written communication skills. It may cover elements like active listening, clear articulation, and adapting communication styles for different audiences.",
   length: 8,
-  image_description: ["A maze with a person thinking nearby", "An infographic or diagram with icons", "A visual representation of interconnected neurons", "A video demonstration", "A picture of a flower garden", "A series of written paragraphs"]
+  image_description: ["Begin with an engaging image that represents communication (e.g., speech bubbles, a handshake). Introduce the importance of effective communication in personal and professional contexts. Highlight how communication skills contribute to building relationships and achieving success.", "Break down the key elements of effective communication:
+    - Clarity: Use visuals representing clear messaging.
+    - Conciseness: Show an image or icon representing brevity and to-the-point communication.
+    - Active Listening: Illustrate attentive listening with an image of a person actively engaged in a conversation.
+    - Feedback: Include a visual of a feedback loop to emphasize the importance of receiving and providing feedback.", "Use split visuals to showcase verbal (speech, words) and non-verbal (body language, gestures) communication. Explain how both aspects contribute to effective communication and how they should align to avoid mixed messages.", "Feature images of individuals showing empathy, such as someone comforting another or actively understanding a colleague's perspective. Discuss the role of empathy in fostering positive communication and building strong relationships.", "Illustrate common barriers to communication (e.g., noise, language differences) with visuals. Discuss strategies to overcome these barriers, including active listening, asking for clarification, and adapting communication style to the audience.", " Provide practical tips for effective communication, such as using "I" statements, choosing the right communication channel, and adjusting communication style based on the audience. Use icons or images to represent each tip for visual appeal."]
 )
 
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/y2kxlez04b8ytkuhkkib.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/l9rtzlrunv5yfnc2ldvr.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/sun09bs4rn12m15v9zif.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/ofkheov8nyjvkvnamdua.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/vh8etn4ly3c8onwpill7.png")
-add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/rj8ba76rgzbv8y9nlbtg.png")
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/rj8ba76rgzbv8y9nlbtg.png") #1
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/sun09bs4rn12m15v9zif.png") #2
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/vh8etn4ly3c8onwpill7.png") #3
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/ofkheov8nyjvkvnamdua.png") #4
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799234/02-communication/l9rtzlrunv5yfnc2ldvr.png") #5
+add_image(course2, "https://res.cloudinary.com/djesiex6g/image/upload/v1706799235/02-communication/y2kxlez04b8ytkuhkkib.png") #6
 
 course3 = Course.create!(
   title: "Time Management and Prioritization",
@@ -80,12 +84,12 @@ course3 = Course.create!(
   image_description: ["A maze with a person thinking nearby", "An infographic or diagram with icons", "A visual representation of interconnected neurons", "A video demonstration", "A picture of a flower garden", "A series of written paragraphs"]
 )
 
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800192/03-timemanagement/rtaxsoavastqajcj8yxl.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800188/03-timemanagement/d4u2pmbmpn54svc5msek.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800187/03-timemanagement/ifzz5hlpougaupleyaip.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/voiq5i3m1tuziphj894s.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/clr4v1t0omqineucdqgc.png")
-add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/qm61jvpjvlchxeopwk8h.png")
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800187/03-timemanagement/ifzz5hlpougaupleyaip.png") #1
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/voiq5i3m1tuziphj894s.png") #2
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/clr4v1t0omqineucdqgc.png") #3
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800192/03-timemanagement/rtaxsoavastqajcj8yxl.png") #4
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800186/03-timemanagement/qm61jvpjvlchxeopwk8h.png") #5
+add_image(course3, "https://res.cloudinary.com/djesiex6g/image/upload/v1706800188/03-timemanagement/d4u2pmbmpn54svc5msek.png") #6
 
 # Create Quizzes with Questions for Course 1
 quiz1 = Quiz.create!(

@@ -4,3 +4,6 @@
 //= link_tree ../../../vendor/javascript .js
 //= link popper.js
 //= link bootstrap.min.js
+//= link components/course_index.css
+//= link components/course_show.css
+//= link components/quiz.css

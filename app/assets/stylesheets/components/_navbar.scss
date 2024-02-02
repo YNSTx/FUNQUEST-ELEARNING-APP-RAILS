@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #2E3252;
+  border-radius: 10px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,19 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+/* Add these styles to your CSS file */
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff; /* Set text color to white */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: #ffffff; /* Set background color of the toggler icon to white */
+}
+
+/* Optional: Set active link color */
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #ffffff;
 }
