@@ -43,7 +43,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_01_095757) do
   end
 
   create_table "answers", force: :cascade do |t|
-    t.string "user_choice"
     t.bigint "user_id", null: false
     t.bigint "question_id", null: false
     t.datetime "created_at", null: false
@@ -61,7 +60,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_01_095757) do
     t.string "title"
     t.text "description"
     t.integer "length"
-    t.text "image_description", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -73,7 +71,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_01_095757) do
     t.string "choice_two"
     t.string "choice_three"
     t.string "choice_four"
-    t.string "correct_answer"
+    t.boolean "correct_answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["quiz_id"], name: "index_questions_on_quiz_id"
