@@ -8,7 +8,6 @@ class CoursesController < ApplicationController
   def show
     @course = Course.find(params[:id])
     @quiz = Quiz.new
-    @course = Course.find(params[:id])
   end
 
 end
