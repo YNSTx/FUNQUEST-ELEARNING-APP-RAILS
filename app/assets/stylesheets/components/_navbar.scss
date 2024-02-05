@@ -6,15 +6,15 @@
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 /* Add these styles to your CSS file */
 
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff; /* Set text color to white */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown-item{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -26,3 +26,6 @@
   color: #ffffff;
 }
 
+.imaglogo{
+  width: 120px;
+}

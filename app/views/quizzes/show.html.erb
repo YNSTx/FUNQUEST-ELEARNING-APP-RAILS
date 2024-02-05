@@ -7,7 +7,7 @@
   <p>Course: <%= @quiz.course.title %></p>
   <p>Student: <%= current_user.first_name %> <%= current_user.last_name %></p>
 
-  <div>
+  <div class="cont">
     <form action="<%= answers_path(@quiz, @answer) %>" method="post">
       <% @quiz.questions.each.with_index(1) do |question, index| %>
         <div class="card mb-4">
