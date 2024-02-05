@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag 'components/quiz' %>
 
-<div class="container">
+<div class="container Qtitle">
   <h1 class="mt-4 mb-4">Quiz questions</h1>
 
   <p>Enrollment Date: <%= @quiz.enrollment_date %></p>
@@ -28,7 +28,13 @@
           </div>
         </div>
       <% end %>
-      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <div class="button-container">
+          <%= link_to 'Exit Quiz', courses_path, class: 'btn btn-primary btn-exit' %>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+      </div>
     </form>
   </div>
 </div>
