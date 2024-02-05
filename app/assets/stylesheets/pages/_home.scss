@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -25,13 +27,10 @@
 
 .container {
   margin-top: 100px;
-  margin: 20px;
+  margin: 0px;
   text-align: left;
-  padding-top: 150px;
+  padding-top: 30px;
 }
-
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 * {
   margin: 0;
@@ -147,7 +146,7 @@
 
 .container-card .card .box .content a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-  background: #fff;
+  background: #ecbc0e;
   color: #000;
 }
 

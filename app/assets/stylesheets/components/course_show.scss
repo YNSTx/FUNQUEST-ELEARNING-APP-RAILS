@@ -53,3 +53,9 @@ body {
 .btn:hover {
   background-color: #ecbc0e; /* Set a darker shade on button hover */
 }
+
+.center-div {
+  margin: 0 auto; /* This will center the div horizontally */
+  border: 1px solid #000; /* Add your preferred border styles */
+  padding: 10px; /* Optional: Add padding for better visual appearance */
+}

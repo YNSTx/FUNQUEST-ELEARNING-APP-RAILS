@@ -21,7 +21,8 @@ class AnswersController < ApplicationController
         score += 1
       end
     end
-    score = score / 3             # 3 total questions
-    @score = score * 100
+    score = score / 3
+    @score = (score * 100).round
   end
 end
+
