@@ -7,8 +7,8 @@
   <p>Course: <%= @quiz.course.title %></p>
   <p>Student: <%= current_user.first_name %> <%= current_user.last_name %></p>
 
-  <div>
-    <form action="<%= answers_path(@quiz, @answer) %>" method="post">
+  <div data-controller="submit-alert">
+    <form action="<%= answers_path(@quiz, @answer) %>" method="post"  data-action="submit->submit-alert#fire" id="quizForm">
       <% @quiz.questions.each.with_index(1) do |question, index| %>
         <div class="card mb-4">
           <div class="card-body">
@@ -28,7 +28,7 @@
           </div>
         </div>
       <% end %>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary"  >Submit</button>
     </form>
   </div>
 </div>

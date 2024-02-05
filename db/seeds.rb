@@ -26,6 +26,7 @@ end
 user1 = User.create!(
   first_name: "FZ",
   last_name: "Elkebch",
+  birth_date: "1997-01-01",
   email: "elkebch@lewagon.com",
   password: "123456"
 )
@@ -33,6 +34,7 @@ user1 = User.create!(
 user2 = User.create!(
   first_name: "Baker",
   last_name: "MZMR",
+  birth_date: "1997-01-01",
   email: "baker@lewagon.com",
   password: "123456"
 )
@@ -40,6 +42,7 @@ user2 = User.create!(
 user3 = User.create!(
   first_name: "Younes",
   last_name: "ST",
+  birth_date: "1997-01-01",
   email: "younes@lewagon.com",
   password: "123456"
 )
