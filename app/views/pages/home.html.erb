@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1498189263721-d42d6bcc2ad1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/djesiex6g/image/upload/v1707128995/jhbc84vngypo6trgunos.jpg);">
   <div class="container">
     <h1>FunQuest <strong>your way</strong> to <strong>embark</strong> the working field!</h1>
     <p>Master the Art of Communication with FunQuest Courses".</p>
@@ -11,7 +11,6 @@
     <div class="card">
       <div class="box">
         <div class="content">
-          <h2>0<%= course.id %></h2>
           <h3><%= course.title %></h3>
           <p><%= course.length %> weeks</p>
           <a href="<%= course_path(course) %>">Read More</a>
@@ -19,4 +18,23 @@
       </div>
     </div>
   <% end %>
+
+  <div class="notification">
+    <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" />
+    <div class="notification-content">
+      <p><small>14th January</small></p>
+      <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit.</p>
+    </div>
+  </div>
+
+
+
+  <div class="notification">
+    <img src='https://kitt.lewagon.com/placeholder/users/Eschults' class="avatar-large"/>
+    <div class="notification-content">
+      <p><small>9th January</small></p>
+      <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit.</p>
+    </div>
+  </div>
+</div>
 </div>

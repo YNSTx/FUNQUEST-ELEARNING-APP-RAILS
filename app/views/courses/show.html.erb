@@ -10,7 +10,7 @@
           <% @course.course_images.each_with_index do |image, index| %>
             <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
               <div class="row">
-                <div class="col-md-8 position-relative">
+              <div class="col-md-8 position-relative center-div">
                   <%= cl_image_tag(image.key, class: 'd-block w-100 h-100', alt: "Image #{index + 1}") %>
                   <button class="carousel-control-prev custom-carousel-controls" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -21,7 +21,7 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-8 center-div">
                   <%= @course.image_description[index] %>
                 </div>
               </div>
