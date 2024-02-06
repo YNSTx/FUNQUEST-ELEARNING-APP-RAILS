@@ -1,0 +1,57 @@
+.container-about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+ 
+}
+
+h4.text-about {
+  font-size: 16px;
+  color: #666;
+}
+
+.card-about {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.title-about {
+  font-weight: bold;
+}
+
+.card-about a {
+  color: #333;
+  margin-right: 10px;
+}
+
+.card-about a:hover {
+  color: #007bff;
+}
+
+.btn-info {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-info:hover {
+  background-color: #0056b3;
+}
+
+.btn-info:focus {
+  outline: none;
+  box-shadow: none;
+}
