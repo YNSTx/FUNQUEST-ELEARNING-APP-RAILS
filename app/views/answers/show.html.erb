@@ -1,9 +1,9 @@
-<div style="height: 295px;">
-  <h1>Results Details</h1>
+<div style="height:370px">
+<h1>Results Details</h1>
 
-  <p>Enrollment Date: <%= Date.today %> </p>
+<p>Enrollment Date: <%= Date.today %> </p>
 
-  <p> <%= @score %> % </p>
+<p> <%= @score %> % </p>
 
 <% if @score >= 66 %>
   <p>Congratulations! You passed the exam.</p>
@@ -12,3 +12,5 @@
 <% else %>
   <p>Unfortunately, you did not pass the exam. You can retake it.</p>
 <% end %>
+
+</div>
