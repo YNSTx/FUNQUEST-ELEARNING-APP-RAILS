@@ -5,9 +5,10 @@
 
   <p> <%= @score %> % </p>
 
-  <% if @score >= 66 %>
-    <p>Congratulations! You passed the exam.</p>
-  <% else %>
-    <p>Unfortunately, you did not pass the exam. You can retake it.</p>
-  <% end %>
-</div>
+<% if @score >= 66 %>
+  <p>Congratulations! You passed the exam.</p>
+<% url = cl_image_path(@user.certificates.last.key, format: "pdf", resource_type: "pdf") %>
+<%= link_to 'Download Certificate', download_certificate_path, class: 'btn btn-primary' %>
+<% else %>
+  <p>Unfortunately, you did not pass the exam. You can retake it.</p>
+<% end %>
