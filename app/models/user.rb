@@ -8,4 +8,5 @@ class User < ApplicationRecord
   has_many :answers
   validates :first_name, presence: true
   validates :last_name, presence: true
+  has_many_attached :certificates
 end
