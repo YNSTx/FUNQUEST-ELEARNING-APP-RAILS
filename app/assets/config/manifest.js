@@ -7,3 +7,4 @@
 //= link components/course_index.css
 //= link components/course_show.css
 //= link components/quiz.css
+//= link components/answer_show.css

@@ -3,7 +3,6 @@ require "open-uri"
 class AnswersController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create]
 
-
   def create
     # update a quiz
     params[:answer][:user_choice].each_with_index do |answer, index|
@@ -45,7 +44,6 @@ class AnswersController < ApplicationController
     file = URI.open(path)
     current_user.certificates.attach(io: file, filename: "cert", content_type: "pdf")
     current_user.save
-
   end
 
   def download_certificate
