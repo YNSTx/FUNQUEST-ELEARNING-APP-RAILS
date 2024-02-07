@@ -1,16 +1,24 @@
-<div style="height:370px">
-<h1>Results Details</h1>
+<%= stylesheet_link_tag 'components/answer_show' %>
 
-<p>Enrollment Date: <%= Date.today %> </p>
+<body id=bodyanswer>
 
-<p> <%= @score %> % </p>
 
-<% if @score >= 66 %>
-  <p>Congratulations! You passed the exam.</p>
-<% url = cl_image_path(@user.certificates.last.key, format: "pdf", resource_type: "pdf") %>
-<%= link_to 'Download Certificate', download_certificate_path, class: 'btn btn-primary' %>
-<% else %>
-  <p>Unfortunately, you did not pass the exam. You can retake it.</p>
-<% end %>
+  <div style="height:880px" class="text-center d-flex flex-column" id="resulttext" data-controller="certif-alert">
+  <h1 class=" text-center">Results Details</h1>
+  <p style="text-indent: 4em;"> </p>
 
-</div>
+  <p id="testx">Enrollment Date: <%= Date.today %> </p>
+
+  <p> <%= @score %> % </p>
+
+  <% if @score >= 66 %>
+    <p>Congratulations! You passed the exam.</p>
+  <% url = cl_image_path(@user.certificates.last.key, format: "pdf", resource_type: "pdf") %>
+  <%= button_tag 'Download Certificate', 'data-action': "click->certif-alert#download", class: 'btn btn-primary' %>
+  <% else %>
+    <p>Unfortunately, you did not pass the exam. You can retake it.</p>
+  <% end %>
+  </div>
+
+
+</body>

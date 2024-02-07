@@ -17,6 +17,8 @@
 .card {
   transition: box-shadow 0.3s ease;
   margin-bottom: 20px;
+  // text color white
+  color: white;
 }
 
 .card:hover {
@@ -46,4 +48,27 @@
 
 .cont{
   text-align: center;
+}
+
+#bodyquiz {
+  /* The image used */
+  background-image: url("https://res.cloudinary.com/djesiex6g/image/upload/v1707247281/quizz_480_t0iijo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+.card {
+  background-color: transparent; /* Set the background color to transparent */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add any other styling you want */
 }
