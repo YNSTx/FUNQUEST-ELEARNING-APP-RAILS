@@ -13,7 +13,6 @@
   <br>
   <% if @score >= 66 %>
     <p><strong>Congratulations! You passed the exam.<strong> </p>
-  <% url = cl_image_path(@user.certificates.last.key, format: "pdf", resource_type: "pdf") %>
   <br>
   <%= button_tag 'Download Certificate', 'data-action': "click->certif-alert#download", class: 'btn btn-primary' %>
   <% else %>
