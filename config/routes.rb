@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
-  get 'download_certificate', to: 'answers#download_certificate', as: 'download_certificate'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
