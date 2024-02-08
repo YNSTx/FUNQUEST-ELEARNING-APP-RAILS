@@ -1,93 +1,56 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/djesiex6g/image/upload/v1707128995/jhbc84vngypo6trgunos.jpg);">
-  <div class="container">
+  <link rel="stylesheet" href="app/assets/stylesheets/config/_fonts.scss">
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/djesiex6g/image/upload/v1707339394/1711_i047_024_s_qrxmwh.jpg);">
+  <div class="container" style="text-align: left; padding-left: 20px; margin-left: 20px;">
     <h1>FunQuest <strong>your way</strong> to <strong>embark</strong> the working field!</h1>
-    <p>Master the Art of Communication with FunQuest Courses".</p>
+    <br>
       <%= link_to 'Apply now', new_user_session_path, class: 'btn btn-flat' %>
   </div>
 </div>
 
-<div class="container-card">
+<div class="container-card d-flex flex-row justify-content-around">
   <% @courses.each do |course| %>
-    <div class="card">
-      <div class="box">
-        <div class="content">
-          <h3><%= course.title %></h3>
-          <p><%= course.length %> weeks</p>
-          <a href="<%= course_path(course) %>">Read More</a>
+    <%= link_to course_path(course) do %>
+      <figure>
+        <div class="date">
+          <span class="card-date-day"><%= course.length %> weeks</span>
         </div>
-      </div>
-    </div>
+        <figcaption>
+          <h5>
+            <span><%= course.title %></span>
+          </h5>
+          <p>
+            <%= course.description %>
+          </p>
+        </figcaption>
+      </figure>
+    <% end %>
   <% end %>
-
-<div id="weirdR">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<h2>Testimonials</h2>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Carousel indicators -->
-	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>
-	<!-- Wrapper for carousel items -->
-	<div class="carousel-inner">
-		<div class="item active">
-			<div class="img-box"><%= image_tag("alexander-hipp-iEEBWgY_6lA-unsplash") %></div>
-			<p class="testimonial">This app has revolutionized my study routine. With its user-friendly interface and comprehensive features, I've been able to organize my notes, create flashcards, and even quiz myself on the go. The ability to sync across devices ensures that I can pick up right where I left off, whether I'm on my laptop or smartphone. Highly recommended for students of all levels!</p>
-			<p class="overview"><b>Michael Holz</b>Enrolled in <a href="#">Time Managemen course</a></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-				</ul>
-			</div>
-		</div>
-		<div class="item">
-			<div class="img-box"><%= image_tag("jurica-koletic-7YVZYZeITc8-unsplash") %></div>
-			<p class="testimonial">As someone who struggles to stay focused while studying, this app has been a lifesaver. The Pomodoro timer feature keeps me on track and prevents burnout, while the built-in task manager helps me prioritize my workload effectively. Plus, the integration with popular calendar apps ensures that I never miss a deadline. It's like having a personal study coach in my pocket!</p>
-			<p class="overview"><b>Paula Wilson</b>Enrolled in <a href="#">Critical Thinking course</a></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-				</ul>
-			</div>
-		</div>
-		<div class="item">
-			<div class="img-box"><%= image_tag("user2") %></div>
-			<p class="testimonial">I've tried several soft skills apps before, but this one stands out. The user interface is clean and intuitive, making navigation a breeze. The content is comprehensive, covering a wide range of topics from emotional intelligence to conflict resolution. I appreciate the real-life scenarios and case studies that help apply the concepts learned. Definitely worth the download!</p>
-			<p class="overview"><b>Antonio Moreno</b>Enrolled in <a href="#">Effective Communication course</a></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- Carousel controls -->
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
-		<i class="fa fa-angle-left"></i>
-	</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">
-		<i class="fa fa-angle-right"></i>
-	</a>
-</div>
-
 </div>
 
 
-</div>
+  <div class="testimonial-container">
+   <h1> Testimonials</h1>
+  <div class="notification">
+    <img src='https://avatars.githubusercontent.com/u/153495936?v=4' class="avatar-large" />
+    <div class="notification-content">
+      <p><small>14th January</small></p>
+      <p class="text">This app has revolutionized my study routine. With its user-friendly interface and comprehensive features, I've been able to organize my notes, create flashcards, and even quiz myself on the go. The ability to sync across devices ensures that I can pick up right where I left off, whether I'm on my laptop or smartphone. Highly recommended for students of all levels!</p>
+    </div>
+  </div>
+  <div class="notification">
+    <img src='https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1702546897/c53gm9offccgqrf9hvbi.jpg' class="avatar-large"/>
+    <div class="notification-content">
+      <p><small>9th January</small></p>
+      <p class="text">As someone who struggles to stay focused while studying, this app has been a lifesaver. The Pomodoro timer feature keeps me on track and prevents burnout, while the built-in task manager helps me prioritize my workload effectively. Plus, the integration with popular calendar apps ensures that I never miss a deadline. It's like having a personal study coach in my pocket!</p>
+    </div>
+  </div>
+   <div class="notification">
+    <img src='https://kitt.lewagon.com/placeholder/users/sarahlafer' class="avatar-large"/>
+    <div class="notification-content">
+      <p><small>6th January</small></p>
+      <p class="text">I've tried several soft skills apps before, but this one stands out. The user interface is clean and intuitive, making navigation a breeze. The content is comprehensive, covering a wide range of topics from emotional intelligence to conflict resolution. I appreciate the real-life scenarios and case studies that help apply the concepts learned. Definitely worth the download!</p>
+    </div>
+  </div>
 </div>
