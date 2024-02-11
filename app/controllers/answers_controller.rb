@@ -1,4 +1,3 @@
-require "open-uri"
 
 class AnswersController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:create]
@@ -26,27 +25,6 @@ class AnswersController < ApplicationController
     score = score / 3
     @score = (score * 100).round
 
-    generate_certificate_pdf if @score > 66
-
     @user = current_user
-  end
-
-  private
-
-  def generate_certificate_pdf
-    pdf = Prawn::Document.new
-    pdf.text "Certificate of Completion", align: :center, size: 30
-    pdf.text current_user.first_name, align: :center, size: 20
-    path = "./public/certificate#{current_user.id}.pdf"
-    # Save the PDF to a file
-    pdf.render_file path
-
-    file = URI.open(path)
-    current_user.certificates.attach(io: file, filename: "cert", content_type: "pdf")
-    current_user.save
-  end
-
-  def download_certificate
-    send_file("/public/certificate#{current_user.id}.pdf")
   end
 end

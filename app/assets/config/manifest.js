@@ -8,3 +8,4 @@
 //= link components/course_show.css
 //= link components/quiz.css
 //= link components/answer_show.css
+//= link components/login_page.css
